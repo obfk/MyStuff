@@ -14,6 +14,7 @@
 		3FE291731B31122000367A84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE291721B31122000367A84 /* Images.xcassets */; };
 		3FE291761B31122000367A84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE291741B31122000367A84 /* LaunchScreen.xib */; };
 		3FE291821B31122000367A84 /* MyStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE291811B31122000367A84 /* MyStuffTests.swift */; };
+		3FE2918C1B3112D100367A84 /* MyWhatsit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2918B1B3112D100367A84 /* MyWhatsit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3FE2917B1B31122000367A84 /* MyStuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStuffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE291801B31122000367A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE291811B31122000367A84 /* MyStuffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuffTests.swift; sourceTree = "<group>"; };
+		3FE2918B1B3112D100367A84 /* MyWhatsit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWhatsit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				3FE291691B31122000367A84 /* AppDelegate.swift */,
 				3FE2916B1B31122000367A84 /* MasterViewController.swift */,
 				3FE2916D1B31122000367A84 /* DetailViewController.swift */,
+				3FE2918B1B3112D100367A84 /* MyWhatsit.swift */,
 				3FE2916F1B31122000367A84 /* Main.storyboard */,
 				3FE291721B31122000367A84 /* Images.xcassets */,
 				3FE291741B31122000367A84 /* LaunchScreen.xib */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE2918C1B3112D100367A84 /* MyWhatsit.swift in Sources */,
 				3FE2916E1B31122000367A84 /* DetailViewController.swift in Sources */,
 				3FE2916C1B31122000367A84 /* MasterViewController.swift in Sources */,
 				3FE2916A1B31122000367A84 /* AppDelegate.swift in Sources */,
