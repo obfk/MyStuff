@@ -13,6 +13,14 @@ class DetailViewController: UIViewController {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var locationField: UITextField!
 
+    @IBAction func changedDetail(sender: AnyObject!) {
+        if sender === nameField {
+            detailItem?!.name = nameField.text
+        } else if sender === locationField {
+            detailItem?!.location = locationField.text
+        }
+    }
+
     var detailItem: MyWhatsit?? {
         didSet {
             // Update the view.
