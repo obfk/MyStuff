@@ -19,6 +19,10 @@ class MasterViewController: UITableViewController {
         MyWhatsit(name: "Solar Powered Bunny",      location: "office")
     ]
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
@@ -38,6 +42,11 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
         }
+
+        // register with the notification center
+        let center = NSNotificationCenter.defaultCenter()
+        center.addObserver( self, selector: "whatsitDidChange", name: WhatsitDidChangeNotification,
+            object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +63,18 @@ class MasterViewController: UITableViewController {
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
 
+    func whatsitDidChange(notification: NSNotification) {
+        // Received whenever a MyWhatsit object is edited.
+        // Find the object in this table (if it is in this table)
+        if let changedThing = notification.object as? MyWhatsit {
+            for (index,thing) in enumerate(things) {
+                if thing === changedThing {
+                    let path = NSIndexPath(forItem: index, inSection: 0)
+                    tableView.reloadRowsAtIndexPaths([path], withRowAnimation: .None)
+                }
+            }
+        }
+    }
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

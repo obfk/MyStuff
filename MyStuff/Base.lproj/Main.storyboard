@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -32,19 +31,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAd-19-lAK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAd-19-lAK">
                                 <rect key="frame" x="16" y="72" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTi-wS-EEN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTi-wS-EEN">
                                 <rect key="frame" x="16" y="139" width="67" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-II-v0h">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-II-v0h">
                                 <rect key="frame" x="16" y="168" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -52,7 +51,7 @@
                                     <action selector="changedDetail:" destination="JEX-9P-axG" eventType="editingDidEnd" id="jBZ-oq-GSh"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-9A-MEs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-9A-MEs">
                                 <rect key="frame" x="16" y="101" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -63,16 +62,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ILW-II-v0h" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="43E-bk-mP8"/>
                             <constraint firstItem="MAd-19-lAK" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="Iwv-n6-z3J"/>
                             <constraint firstItem="fWE-9A-MEs" firstAttribute="top" secondItem="MAd-19-lAK" secondAttribute="bottom" constant="8" id="Md0-58-TT6"/>
-                            <constraint firstItem="MAd-19-lAK" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="R7L-Gw-wV6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MAd-19-lAK" secondAttribute="trailing" constant="522" id="YR1-pp-B4o"/>
-                            <constraint firstItem="fWE-9A-MEs" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="Zdc-oE-YUx"/>
-                            <constraint firstItem="NTi-wS-EEN" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="aKu-pZ-TaK"/>
-                            <constraint firstItem="fWE-9A-MEs" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="gaY-zK-e8x"/>
-                            <constraint firstItem="ILW-II-v0h" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="mF7-lD-aqa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NTi-wS-EEN" secondAttribute="trailing" constant="501" id="oKm-GY-vVW"/>
                             <constraint firstItem="ILW-II-v0h" firstAttribute="top" secondItem="NTi-wS-EEN" secondAttribute="bottom" constant="8" id="uA0-Cs-SI2"/>
                             <constraint firstItem="NTi-wS-EEN" firstAttribute="top" secondItem="fWE-9A-MEs" secondAttribute="bottom" constant="8" id="w3K-7Y-UVF"/>
                         </constraints>
