@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="changedDetail:" destination="JEX-9P-axG" eventType="editingDidEnd" id="jBZ-oq-GSh"/>
+                                    <action selector="changedDetail:" destination="JEX-9P-axG" eventType="editingChanged" id="epF-gr-wUT"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-9A-MEs">
