@@ -44,9 +44,12 @@ class MasterViewController: UITableViewController {
         }
 
         // register with the notification center
-        let center = NSNotificationCenter.defaultCenter()
-        center.addObserver( self, selector: "whatsitDidChange", name: WhatsitDidChangeNotification,
-            object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: "whatsitDidChange:",
+            name: WhatsitDidChangeNotification,
+            object: nil
+        )
     }
 
     override func didReceiveMemoryWarning() {

@@ -24,8 +24,8 @@ class MyWhatsit {
     }
 
     init( name: String, location: String = "") {
-        self.name = name;
-        self.location = location;
+        self.name = name
+        self.location = location
     }
 
     func postDidChangeNotification() {
